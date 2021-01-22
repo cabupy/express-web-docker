@@ -1,0 +1,37 @@
+{
+  "name": "express-web-docker",
+  "version": "1.0.0",
+  "description": "Express nodejs para servir una web desde public",
+  "main": "server.js",
+  "scripts": {
+    "test": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "semi": false,
+    "useTabs": false,
+    "singleQuote": true,
+    "bracketSpacing": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/cabupy/express-web-docker.git"
+  },
+  "keywords": [
+    "express",
+    "nodejs",
+    "web"
+  ],
+  "author": "Carlos Vallejos (cabupy)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cabupy/express-web-docker/issues"
+  },
+  "homepage": "https://github.com/cabupy/express-web-docker#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "volleyball": "^1.5.1"
+  }
+}
