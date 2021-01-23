@@ -1,4 +1,5 @@
 FROM node:14.15.2-alpine
+LABEL org.opencontainers.image.source=https://github.com/cabupy/express-web-docker
 WORKDIR /home/node/app
 ENV NPM_CONFIG_PREFIX=/home/node/.npm-global
 ENV PATH=$PATH:/home/node/.npm-global/bin
