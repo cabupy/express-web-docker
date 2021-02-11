@@ -42,14 +42,17 @@ app.get('/api_url', (req, res) => {
 
 app.use('/', express.static(path.join(__dirname, 'public'), options))
 
+// que vaya todo al index
+app.use('*', express.static(path.join(__dirname, 'public'), options))
+
 // El resto de metodos y rutas
-app.use('*', (req, res, next) => {
-  res.status(200).json({
-    success: true,
-    message: 'Vamyal S.A. 2021 ! -  Frontend Wepa',
-  })
-  next()
-})
+// app.use('*', (req, res, next) => {
+//   res.status(200).json({
+//     success: true,
+//     message: 'Vamyal S.A. 2021 ! -  Express Web Docker',
+//   })
+//   next()
+// })
 
 const _IP = process.env.IP || 'localhost'
 const _PORT = process.env.PORT || 8080

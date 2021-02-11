@@ -5,7 +5,6 @@ ENV NPM_CONFIG_PREFIX=/home/node/.npm-global
 ENV PATH=$PATH:/home/node/.npm-global/bin
 ENV IP="0.0.0.0"
 ENV PORT="8080"
-#ENV API_URL="https://apik8s.wepa.dev"
 COPY package.json .
 RUN npm install --production
 COPY . .
