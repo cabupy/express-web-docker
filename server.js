@@ -36,7 +36,20 @@ const options = {
 
 app.get('/api_url', (req, res) => {
   return res.status(200).json({
+    api_url: process.env.API_URL
+  })
+})
+
+app.get('/app_id', (req, res) => {
+  return res.status(200).json({
+    app_id: process.env.APP_ID
+  })
+})
+
+app.get('/config', (req, res) => {
+  return res.status(200).json({
     api_url: process.env.API_URL,
+    app_id: process.env.APP_ID
   })
 })
 
